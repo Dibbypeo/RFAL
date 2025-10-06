@@ -28,7 +28,7 @@ HWND RFALCreateWin(HINSTANCE ProI, char* title, int width, int height) {
 HWND RFALCreateBut(HINSTANCE ProI, HWND attach, char* text, int xpos, int ypos, int width, int height) {
 	HWND subWin = CreateWindow(
 		"BUTTON",
-		"Click me!",
+		text,
 		WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON,
 		75, 75, 100, 50,
 		attach, NULL,
